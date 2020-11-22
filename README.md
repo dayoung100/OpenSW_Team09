@@ -3,3 +3,4 @@
  
  ## Team member
  -Dayoung Lee(1871035)
+ -seoyeon ahn(1876217)
