@@ -107,31 +107,35 @@ color: black;
 }
 .account-info{
     width:50%;
-    background-color:  #156e58;
-    color:#e8e9e8;
+    background-color:  #7289daa1;
     /* margin-top:20px; */
     margin-left:20%;
-    padding:30px;
+    padding:40px;
 }
-    .account-info h1{
-        color:#f4cd64;
-    }
     .account-info button{
         float:right;
+        padding: 6px 10px;
+        background-color: #555;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
     }
 .pet-info{
     width:50%;
-    background-color: #156e58;
+    background-color: #7289daa1;
     /* margin-top:20px; */
-    color:#e8e9e8;
-    padding:30px;
+    padding:40px;
     margin-left:20%
 }
     .pet-info button{
         float: right;
-    }
-    .pet-info h1{
-        color:#f4cd64;
+        padding: 6px 10px;
+        background-color: #555;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
     }
 
 #main_footer {
