@@ -25,7 +25,7 @@
                 }
                 else {
                     echo '
-                    <form action = "signup.php"><button type = "submit">Signup</button></form>
+                    <form action = "signup.php"><button type = "submit">My Acccount</button></form>
                     <form action = "includes/login.inc.php" method = "post">
                     <button type = "submit" name = "login-submit">Login</button>
                     <input type = "password" name = "pwd" placeholder="Password">
