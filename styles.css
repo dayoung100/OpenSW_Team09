@@ -98,6 +98,41 @@ color: black;
     padding: 20px;
     margin-bottom: 15px;
 }
+#settings{
+    width:40%;
+    background-color: #ddd;
+    /* margin-top:20px; */
+    margin-left:30%;
+    padding:30px;
+}
+.account-info{
+    width:50%;
+    background-color:  #156e58;
+    color:#e8e9e8;
+    /* margin-top:20px; */
+    margin-left:20%;
+    padding:30px;
+}
+    .account-info h1{
+        color:#f4cd64;
+    }
+    .account-info button{
+        float:right;
+    }
+.pet-info{
+    width:50%;
+    background-color: #156e58;
+    /* margin-top:20px; */
+    color:#e8e9e8;
+    padding:30px;
+    margin-left:20%
+}
+    .pet-info button{
+        float: right;
+    }
+    .pet-info h1{
+        color:#f4cd64;
+    }
 
 #main_footer {
     clear: both;
