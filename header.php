@@ -18,14 +18,15 @@
           <div class = 'login-container'>
             <?php
                 if(isset($_SESSION['userId'])){
-                    echo '<form action = settings.php"><button type= "submit">Settings</button></form>
+                    echo '<form action = main.php"><button type= "submit">Home</button></form>
+                    <form action = settings.php"><button type= "submit">My Account</button></form>
                     <form action = "includes/logout.inc.php" method = "post">
                     <button type = "submit" name = "logout-submit">Logout</button>
                     </form>';
                 }
                 else {
-                    echo '
-                    <form action = "signup.php"><button type = "submit">My Acccount</button></form>
+                    echo '<form action = main.php"><button type= "submit">Home</button></form>
+                    <form action = "signup.php"><button type = "submit">Sign Up</button></form>
                     <form action = "includes/login.inc.php" method = "post">
                     <button type = "submit" name = "login-submit">Login</button>
                     <input type = "password" name = "pwd" placeholder="Password">
