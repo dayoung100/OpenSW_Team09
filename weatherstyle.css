@@ -18,17 +18,7 @@ body{
  .time{
  text-align:right;
  }
-.container{
-    width: 400px; 
-    height:130px;	
-    background-color: #f7f7f7;
-    
-    display: block;
-    margin: 0 auto;
-    
-    border-radius: 10px;
-    padding-bottom : 50px;
-}
+
 .walk{
 
     color: black;
