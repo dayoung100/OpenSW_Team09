@@ -63,11 +63,10 @@ $events = $req->fetchAll();
 			.col-centered {
 				float: none;
 				margin: 0 auto;
-			}
-            
-            #search_aside { 
-                float: right; width: 300px; margin: 20px 0px; padding: 10px; background: #29abb9; 
-            }
+			}            
+      #search_aside { 
+         float: right; width: 300px; margin: 20px 0px; padding: 10px; background: #29abb9; 
+      }
 		</style>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -231,11 +230,8 @@ $events = $req->fetchAll();
 					</div>
 				</div>
 			</div>
-            
-
 		</div>
 		<!-- /.container -->
-        
 
 		<?php date_default_timezone_set("Asia/Seoul");
 	$date = date("Y-m-d");
