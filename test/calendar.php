@@ -189,7 +189,7 @@ $events3 = $req3->fetchAll();
 									</div>
 								</div>
 
-								<div class="form-group">
+								<!-- <div class="form-group">
 									<label for="start" class="col-sm-2 control-label">Start date</label>
 									<div class="col-sm-10">
 										<input type="datetime" name="start" class="form-control" id="start">
@@ -201,7 +201,7 @@ $events3 = $req3->fetchAll();
 									<div class="col-sm-10">
 										<input type="datetime" name="end" class="form-control" id="end">
 									</div>
-								</div>
+								</div> -->
 
 								<div class="form-group">
 									<label for="content" class="col-sm-2 control-label">Content</label>
