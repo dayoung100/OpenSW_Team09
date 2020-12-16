@@ -44,18 +44,29 @@ $events = $req->fetchAll();
 		<!-- Custom CSS -->
 		<style>
 			body {
-				padding-top: 70px;
+				padding-top: 50px;
 				/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 			}
 
+            #container { 
+                float: center;
+                width: 1080px; 
+                margin: 15px auto; 
+                text-align: left; 
+            }
+            
 			#calendar {
+                float: left;
 				max-width: 800px;
 			}
 
 			.col-centered {
 				float: none;
 				margin: 0 auto;
-			}
+			}            
+      #search_aside { 
+         float: right; width: 300px; margin: 20px 0px; padding: 10px; background: #29abb9; 
+      }
 		</style>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -79,6 +90,19 @@ $events = $req->fetchAll();
 
 					<div id="calendar" class="col-centered">
 					</div>
+                    <!--search-->
+                    <aside id="search_aside">
+                        <div class = "input-group">
+                        <div class = "input-group-text" id="basic-addon1">
+                            <span class = "search"></span>
+                        </div>
+                        <!--search input-->
+                        <input autofocus placeholder="search" class="form-control" type="text" autocomplete="off" name="search" id="search"/>
+                        </div>
+                        <ul class="list-group" id="list"></ul>
+                    </aside>
+                    <!--JS file-->    
+                    <script src="js/search.js"></script>
 				</div>
 
 			</div>
@@ -116,7 +140,7 @@ $events = $req->fetchAll();
 										</select>
 									</div>
 								</div>
-								
+
 								<div class="form-group">
 									<label for="start" class="col-sm-2 control-label">Start date</label>
 									<div class="col-sm-10">
@@ -206,10 +230,8 @@ $events = $req->fetchAll();
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<!-- /.container -->
-
 
 		<?php date_default_timezone_set("Asia/Seoul");
 	$date = date("Y-m-d");
