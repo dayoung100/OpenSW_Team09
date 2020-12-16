@@ -3,8 +3,8 @@
 $connect = new PDO('mysql:host=localhost;dbname=team09', 'team09', 'team09');
 
 $data = array();
-//$query = "SELECT * FROM todo ORDER BY idTodo";
-$query = "SELECT * FROM todo ORDER BY _id";
+$query = "SELECT * FROM todo ORDER BY idTodo";
+//$query = "SELECT * FROM todo2 ORDER BY _id";
 $statement = $connect->prepare($query);
 $statement->execute();
 $result=$statement->fetchAll();
