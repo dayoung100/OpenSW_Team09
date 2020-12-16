@@ -7,10 +7,10 @@
                 <div class="signup">
                     <h1>Signup</h1>
                     <form action = "includes/signup.inc.php" method = "post">
-                        <p><input type = "text" name = "uid" placeholder = "Username">
-                        <p><input type = "text" name = "mail" placeholder = "E-mail">
-                        <p><input type = "password" name = "pwd" placeholder = "Password">
-                        <p><input type = "password" name = "pwd-repeat" placeholder = "Repeat Password">
+                        <p><input type = "text" name = "uid" placeholder = "Username" required>
+                        <p><input type = "text" name = "mail" placeholder = "E-mail" required>
+                        <p><input type = "password" name = "pwd" placeholder = "Password" required>
+                        <p><input type = "password" name = "pwd-repeat" placeholder = "Repeat Password" required>
                         <p><button type = "submit" name = "signup-submit">Signup</button>
                     </form>
                 </signup>
