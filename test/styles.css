@@ -1,0 +1,175 @@
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#topnav {
+overflow: hidden;
+/* background-color: #333; */
+background-color: 	#2f6187;
+}
+
+#topnav input[type=text]{
+    float: right;
+    padding:6px 10px;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom:10px;
+    font-size:20px;
+    border: none;
+    width:120px; 
+    background-color:#eaeff3;
+}
+#topnav input[type=password]{
+    float: right;
+    padding:6px 10px;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom:10px;
+    font-size:20px;
+    border: none;
+    width:120px;
+    background-color: #eaeff3;
+}
+
+#topnav button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom:10px;
+    background-color: #20435e;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+#main_section {
+    width: 100%;
+    /* background: #fff9f9; */
+}
+#index{
+    background-color: 		#a8dda8;
+    padding:0%
+}
+#main_section .signup input[type=text]{
+    font-size:20px;
+    background-color:	#a8dda8;
+    border:none;
+    width:200px;
+    padding:5px;
+    border-radius: 5px;
+}
+#main_section .signup input[type=password]{
+    font-size:20px;
+    background-color:	#a8dda8;
+    border:none;
+    width:200px;
+    padding:5px;
+    border-radius: 5px;
+}
+#main_section .signup button{
+    padding: 6px 10px;
+    background-color: #2f6187;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.signup{
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
+    background: 	#effad3;
+    color:#333;
+    height: 800px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.login-index{
+    text-align: center;
+    /* background: #fff9f9; */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+
+#settings{
+    margin-left: 20%;
+    margin-right:20%;
+    background-color: #effad3;
+    /* background: linear-gradient(	#a8dda8,#effad3); */
+    height:800px;
+    color:#333;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    width: 30%;
+    border: none;
+}
+.form-container {
+    /* max-width: 500px; */
+    padding: 10px;
+    background-color: #a8dda8;
+    float:none;
+}
+.form-container .btn {
+    background-color: #29abb9;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.form-container .cancel {
+    background-color: #2f6187;
+  }
+.form-container input[type=text], .form-container input[type=password] {
+width: 50%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+.account-info{
+    /* margin-top:20px; */
+    padding:40px;
+    color:#333;
+}
+    .account-info button{
+        padding: 10px 200px;
+        background-color: 	#2f6187;
+        border-radius: 25px;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+.pet-info{
+    /* margin-top:20px; */
+    padding:40px;
+    color: #333;
+}
+    .pet-info button{
+        padding: 10px 195px;
+        border-radius: 25px;
+        background-color: 	#2f6187;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+#main_footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
+}
