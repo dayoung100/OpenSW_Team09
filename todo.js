@@ -1,5 +1,5 @@
-//오늘 날짜 불러오기 - db랑 묶어야? -형식 나중에 바꿔도ok
-var day = new Date();
+//오늘 날짜 불러오기-필요x
+/*var day = new Date();
 var dd = day.getDate();
 var mm = day.getMonth() + 1; //January is 0!
 var yyyy = day.getFullYear();
@@ -18,20 +18,37 @@ const se_date= document.getElementById('selected_day');
 var datePart = document.createElement('h1');
 var text = document.createTextNode(date);
 datePart.appendChild(text);
-se_date.appendChild(datePart);
+se_date.appendChild(datePart);*/
 
-
+//search를 db와 연결중-미완
+/*var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'test09',
+  password : 'test09',
+  database : 'test09'
+});
+ 
+connection.connect();
+ 
+connection.query('SELECT * from todo', function (error, results, fields) {
+  if (error) console.log(error);
+  console.log(results);
+});
+ 
+connection.end();*/
 
 
 
 //search
 const people=[
-    {name: 'Alice'},
-    {name: 'Bob'},
+    {name: 'gohome'},
+    {name: 'opensw'},
     {name: 'David'},
     {name: 'Mr.Bob'},
     {name: 'Bob Jr.'}
 ];
+
 
 const list= document.getElementById('list');
 

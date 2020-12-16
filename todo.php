@@ -1,3 +1,16 @@
+<!--php: db연결 - 필요x
+<?php
+    $connect = mysqli_connect("localhost", "test09", "test09", "test09");
+    if(!$connect)
+        die("DB 접속 실패: ".mysql_error());
+    //$db_selected = mysql_select_db("test09", $connect);
+    //if(!$db_selected)
+      //  die("DB 접속 실패: ".mysql_error());
+
+    $sql = "select * from todo;";
+    $result = mysqli_query($connect, $sql);
+?>-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,29 +26,31 @@
 
     $(document).ready(function() {
 		
-		$('#calendar').fullCalendar({
+
+		var calendar = $('#calendar').fullCalendar({
 			header: {
 				left:'prev,next',
-                //center:'title',
-                right: 'listDay, listWeek, month'
+                center:'title',
+                //right: 'listDay, listWeek, month'
 			},
 
-			views: {
+			/*views: {
                 //to do list 외에는 그냥 버튼, 나중에 php파일과 연결하던가 해야함
 				listDay: { buttonText: 'To do list' },
                 listWeek: { buttonText: 'Diary' },
                 month: { buttonText: 'Account' }
-			},
+			},*/
 
 			defaultView: 'listDay',
-            //일단 날짜 고정으로 해뒀는데 js 와 연결...해봐야
-			defaultDate: '2020-12-10',
+            //날짜 오늘 날짜 받아옴
+			defaultDate: new Date(),
 			navLinks: true,
-			editable: true,
+			editable: false,
 			eventLimit: true,
-			//임의로 추가, 나중에 db와 연결해서 가져와야
-            //json?
-            events: [
+			//php와 연결
+            events: 'load.php',
+            //events:
+            /*[
 				{
 					title: 'All Day Event',
 					start: '2020-12-10'
@@ -74,7 +89,7 @@
 					url: 'http://google.com/',
 					start: '2017-05-28'
 				}
-			]
+			]*/
 		});
 		
 	});
@@ -82,26 +97,25 @@
   </script>
     </head>
     <style>
-
-  body {
-		margin: 40px 10px;
-		padding: 0;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		font-size: 14px;
-	}
-
-	#calendar {
-		max-width: 900px;
-		margin: 0 auto;
-	}
-
 </style>
  <body>
      <br />
-  <div class="container">
-      <div id="selected_day"></div>
+     
+     <!--<h2>mysql 테스트</h2> - db에서 받아오기 테스트, 필요x
+     <?php
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "번호 ".$row['idTodo']."<br>";
+        }
+    }else{
+        echo "none";
+    }
+    mysqli_close($connect);   
+?>-->
       
-   <div id="calendar"></div>
+     
+  <div class="container">    
+      <div id="selected_day"></div> 
       <!--search-->
       <div class = "input-group">
         <div class = "input-group-text" id="basic-addon1">
@@ -110,11 +124,13 @@
          <!--search input-->
          <input autofocus placeholder="search" class="form-control" type="text" autocomplete="off" name="search" id="search"/>
       </div>
-       
+      <ul class="list-group" id="list"></ul>
+      <div id="calendar"></div>  
   </div>
      
-     <ul class="list-group" id="list"></ul>
-     <!--JS file-->
+     
+     
+     <!--JS file-->    
      <script src="./todo.js"></script>
      
  </body>
