@@ -103,7 +103,7 @@ elseif (isset($_POST['title']) && isset($_POST['type']) && isset($_POST['content
 	}
 
 }
-header('Location: index.php');
+header('Location: calendar.php');
 
 
 ?>
