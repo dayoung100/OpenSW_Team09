@@ -11,7 +11,6 @@
     $result = mysqli_query($connect, $sql);
 ?>-->
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,6 +26,7 @@
 
     $(document).ready(function() {
 		
+
 		var calendar = $('#calendar').fullCalendar({
 			header: {
 				left:'prev,next',
@@ -130,7 +130,7 @@
      
      
      
-     <!--JS file-->     
+     <!--JS file-->    
      <script src="./todo.js"></script>
      
  </body>
