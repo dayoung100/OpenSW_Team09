@@ -250,7 +250,7 @@ $events3 = $req3->fetchAll();
 						left: 'prev,next today',
 						center: 'title',
 						//right: 'month,basicWeek,basicDay'
-						right: 'month'
+						right: 'month, listMonth'
 					},
 
 					navLinks: true,
