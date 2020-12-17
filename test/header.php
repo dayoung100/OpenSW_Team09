@@ -25,7 +25,7 @@
                     </form>';
                 }
                 else {
-                    echo '<form action = "main.php"><button type= "submit">Home</button></form>
+                    echo '<form action = "logout.php"><button type= "submit">Home</button></form>
                     <form action = "signup.php"><button type = "submit">Sign Up</button></form>
                     <form action = "includes/login.inc.php" method = "post">
                     <button type = "submit" name = "login-submit">Login</button>
