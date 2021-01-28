@@ -9,4 +9,4 @@
  
  To use this web: download 'test' folder -> access the web through localhost starting from logout.php file
  
-![Image](https://github.com/Taehee-K/Pet-Book/blob/main/logout_page.png)
+![alt-text](https://github.com/Taehee-K/Pet-Book/blob/main/logout_page.png)
