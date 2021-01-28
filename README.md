@@ -1,7 +1,7 @@
-# OpenSW_Team09
- OpenSW Team 09 Repository - Web Application for Pet Owners
+# Pet Book
+Web Application for Pet Owners
  
- ## Team member
+ ## Team member(OpenSWPlatform team09)
  -Dayoung Lee(1871035) -Seoyeong Han(1871055)
 
  -seoyeon ahn(1876217) -Taehee Kim(1870027)
