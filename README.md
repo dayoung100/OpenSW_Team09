@@ -7,7 +7,7 @@ Web Application for Pet Owners
  -seoyeon ahn(1876217) -Taehee Kim(1870027)
  
  
- To use this web: 
+ ## To use this web
  
  1. download repository
  2. "sql" folder -> create database using sql queries
