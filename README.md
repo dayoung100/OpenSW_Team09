@@ -10,7 +10,7 @@ Web Application for Pet Owners
  To use this web: 
  
  1. download repository
- 2. <sql> folder -> create database using sql queries
- 2. <test> folder -> access the web through localhost starting from `logout.php` file
+ 2. "sql" folder -> create database using sql queries
+ 2. "test" folder -> access the web through localhost starting from `logout.php` file
  
 ![alt-text](https://github.com/Taehee-K/Pet-Book/blob/main/logout_page.png)
